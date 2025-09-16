@@ -7,7 +7,7 @@ import numpy as np
 # Recursive functions
 
 
-def fib(n):
+def fibonacci(n):
 
     """A function that returns the nth number in the Fibonacci sequence"""
 
@@ -15,7 +15,7 @@ def fib(n):
         return ("Please enter numbers greater then 0")
     if n<2:
         return n
-    return fib(n-1)+fib(n-2) #recursion to calculate the nth number in sequence
+    return fibonacci(n-1)+fibonacci(n-2) #recursion to calculate the nth number in sequence
 
 
 def to_binary(n):
@@ -30,8 +30,8 @@ def to_binary(n):
 
 
 #Test case for above functions
-print(fib(0))
-print(fib(12))
+print(fibonacci(0))
+print(fibonacci(12))
 print(to_binary(34))
 print(to_binary(0))
 print(to_binary(2))
