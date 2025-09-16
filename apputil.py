@@ -79,4 +79,4 @@ def task_4():
 
     """Returns a list of the 5 most common professions in order of prevalence"""
 
-    return df_bellevue.dropna().groupby('profession')['profession'].count().sort_values(ascending=False)
+    return df_bellevue.dropna().groupby('profession')['profession'].count().sort_values(ascending=False).index.to_list()
